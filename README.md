@@ -1,4 +1,3 @@
-# Getting_And_Cleaning_Data
 ### Introduction
 
 Tidy dataset has been created by using Smart phone dataset provided in the course project of 30 volunteers doing 6 acitvities. Only the X_train, and X_test data is used from the original dataset and data in the inertial folders is ignored. As X_train and X_test seems like the final data after post-processing.
