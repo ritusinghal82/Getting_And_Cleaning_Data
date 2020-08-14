@@ -2,7 +2,7 @@ X_train <- read.table("UCI_HAR_Dataset/train/X_train.txt")
 subject <- read.table("UCI_HAR_Dataset/train/subject_train.txt")
 y_train <- read.table("UCI_HAR_Dataset/train/y_train.txt")
 features <- read.table("UCI_HAR_Dataset/features.txt")
-feature_names <- feature[,2]
+feature_names <- features[,2]
 colnames(X_train) <- feature_names
 valid_names <- make.names(names = names(X_train), unique=TRUE, allow_=TRUE)
 colnames(X_train) <- valid_names
@@ -48,4 +48,4 @@ temp <- names(tidy_dataset)
 temp <- gsub("std","std_mean",temp)
 colnames(tidy_dataset) <- temp
 
-write.table(tidy_dataset,file = "./tidy_dataset.txt")
+write.table(tidy_dataset,file = "./tidy_dataset.txt", row.name = FALSE)

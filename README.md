@@ -3,6 +3,9 @@
 Tidy dataset has been created by using Smart phone dataset provided in the course project of 30 volunteers doing 6 acitvities. Only the X_train, and X_test data is used from the original dataset and data in the inertial folders is ignored. As X_train and X_test seems like the final data after post-processing.
 
 ### run_analysis script
+This script uses following packages :-
+sjlabelled, and dplyr. THese should be first installed and loaded using install.packages and library command. 
+Also I use UCI_HAR_Dataset directory name to read the files. So Folder name should be changed to remove spaces to underscore first. So "UCI HAR Dataset" folder should be renamed to "UCI_HAR_Dataset" first 
 Step1 :- X_train.txt, y_train.txt and subject_train.txt files are read in R using read.table command. It is checked that X_train has 561 columns each corresponding to one feature.
 Step2:- feature.txt file is read in R using read.table command to retrieve the feature names.
 Step3:- make.names command is used to make unique names from feature name vector since some of the names are duplicated in original file
